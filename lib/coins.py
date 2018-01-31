@@ -573,7 +573,7 @@ class PVerde(Coin):
     P2PKH_VERBYTE = bytes.fromhex("00")
     P2SH_VERBYTES = [bytes.fromhex("05")]
     WIF_BYTE = bytes.fromhex("80")
-    GENESIS_HASH = ('00f7cf1b3e318ec1bf7c7f0ff2b26e1c47b8b55b0c5dc6a5f4d51f304b6ee0f3')
+    GENESIS_HASH = ('00a86bafe45307a6d74c3ac541596c3b01cbe146cf548325f4716b889b3eabb4')
     TX_COUNT =  258858
     TX_COUNT_HEIGHT = 382138
     TX_PER_BLOCK = 5
