@@ -1,0 +1,9 @@
+mkdir /var/PVerdeData
+export DB_DIRECTORY=/var/PVerdeData
+export COIN=PVerde
+export DAEMON_URL=http://multichainrpc:DfG5MHLU6fxvd7duazzsVTUxVk1i2w9XHW2J78E9rBh@127.0.0.1:8571
+export ALLOW_ROOT=1
+export TCP_PORT=50001
+
+./electrumx
+

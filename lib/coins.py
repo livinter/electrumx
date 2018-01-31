@@ -564,6 +564,23 @@ class BitcoinNolnet(BitcoinCash):
     PEER_DEFAULT_PORTS = {'t': '52001', 's': '52002'}
 
 
+class PVerde(Coin):
+    NAME = "PVerde"
+    SHORTNAME = "PNB"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e") #"00408237")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4") ##"0516be2f")
+    P2PKH_VERBYTE = bytes.fromhex("00")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("80")
+    GENESIS_HASH = ('00f7cf1b3e318ec1bf7c7f0ff2b26e1c47b8b55b0c5dc6a5f4d51f304b6ee0f3')
+    TX_COUNT =  258858
+    TX_COUNT_HEIGHT = 382138
+    TX_PER_BLOCK = 5
+    PEERS = ['192.168.15.13 t50001',]
+    RPC_PORT = 8571
+
+
 class Litecoin(Coin):
     NAME = "Litecoin"
     SHORTNAME = "LTC"
